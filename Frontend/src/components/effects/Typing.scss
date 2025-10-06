@@ -1,0 +1,9 @@
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+}

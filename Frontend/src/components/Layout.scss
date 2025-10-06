@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+
+  .Layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .layout-header {
+      background: #1f2937;
+      padding: 1rem 3rem 1rem 1rem;
+
+      @media (max-width: 1024px) {
+        padding: 1rem;
+      }
+
+      @media (max-width: 768px) {
+        padding: 0.5rem 1rem;
+      }
+
+      nav {
+        .links {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 60px;
+
+          .mainTitle {
+            h1 {
+              font-size: 30px;
+              color: #ffffff;
+              margin: 0;
+
+              @media (max-width: 1024px) {
+                font-size: 28px;
+              }
+
+              @media (max-width: 768px) {
+                font-size: 20px;
+              }
+            }
+
+            @media (max-width: 768px) {
+              order: 2; /* titre à droite */
+            }
+          }
+
+          .mainLinks {
+            display: flex;
+            gap: 1rem;
+
+            a {
+              color: #ffffff;
+              text-decoration: none;
+              font-weight: 600;
+              transition: 0.2s;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            .active-link {
+              border-bottom: 2px solid white;
+            }
+
+            @media (max-width: 1024px) {
+              gap: 0.8rem;
+              width: max-content;
+
+              a {
+                font-size: 0.95rem;
+              }
+            }
+
+            @media (max-width: 768px) {
+              order: 1; /* burger/menu à gauche */
+              position: absolute;
+              top: 50px;
+              left: 0;
+              right: auto;
+              background: #1f2937;
+              flex-direction: column;
+              align-items: flex-start;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.1s ease-out;
+              z-index: 30;
+              padding: 0;
+
+              &.show {
+                max-height: 500px;
+                padding: 0.5rem 1rem;
+              }
+
+              a {
+                font-size: 0.85rem;
+                padding: 0.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .layout-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #f9fafb;
+    }
+  }
+}

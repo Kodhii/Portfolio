@@ -41,7 +41,7 @@ body {
             }
 
             @media (max-width: 768px) {
-              order: 2; /* titre à droite */
+              order: 2;
             }
           }
 
@@ -74,7 +74,7 @@ body {
             }
 
             @media (max-width: 768px) {
-              order: 1; /* burger/menu à gauche */
+              order: 1;
               position: absolute;
               top: 50px;
               left: 0;

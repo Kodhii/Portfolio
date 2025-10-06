@@ -4,7 +4,7 @@ import "./Typing.scss";
 interface TypingProps {
   text: string;
   speed?: number;
-  delay?: number; // nouveau
+  delay?: number;
   className?: string;
 }
 

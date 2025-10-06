@@ -5,7 +5,6 @@ import "./AnimatedBackground.scss";
 
 export default function AnimatedBackground() {
   useEffect(() => {
-    // Initialise le moteur une seule fois
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     });

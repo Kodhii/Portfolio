@@ -4,7 +4,7 @@
     "title": "Portfolio personnel",
     "description": "Site web réalisé avec React, TypeScript et SCSS.",
     "image": "./src/assets/pictures/Portfolio.png",
-    "details": "Ce projet met en avant mes compétences frontend : composants réactifs, animations SCSS et gestion des états via hooks.",
+    "details": "Ce projet met en avant mes compétences frontend : composants réactifs et animations SCSS",
     "location": "Github",
     "URL": "https://github.com/Kodhii/Portfolio"
   },

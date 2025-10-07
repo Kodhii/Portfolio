@@ -21,6 +21,7 @@
   }
 
   &.open {
+
     .line1,
     .line2,
     .line3 {
@@ -38,9 +39,11 @@
     .line1 {
       animation-delay: 0s;
     }
+
     .line2 {
       animation-delay: 0s;
     }
+
     .line3 {
       animation-delay: 0s;
     }
@@ -52,6 +55,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -63,4 +67,3 @@
     display: flex;
   }
 }
-

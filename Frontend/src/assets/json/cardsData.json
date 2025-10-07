@@ -13,7 +13,7 @@
     "title": "Page web dynamique JS",
     "description": "Page web dynamique réalisé avec Javascript dans le cadre de ma formation avec OpenClassRooms",
     "image": "./src/assets/pictures/JS.png",
-    "details": "Utilisation de JavaScript pour communiquer avec une API et actualiser le contenu de la page de façon dynamique",
+    "details": "Intégration d’une API REST en JavaScript afin de mettre à jour le contenu de la page de manière dynamique et fluide.",
     "location": "Github",
     "URL": "https://github.com/Kodhii/PROJET-3"
   },
@@ -22,7 +22,7 @@
     "title": "Backend Express & MongoDB",
     "description": "Création d'une base de données pour un site de notation de livre réalisé avec Express et MongoDB dans le cadre de ma formation avec OpenClassRooms",
     "image": "./src/assets/pictures/MongoDB.png",
-    "details": "Création d'une API REStful avec Express et MongoDB",
+    "details": "Création d'une API REST avec Express et MongoDB",
     "location": "Github",
     "URL": "https://github.com/Kodhii/PROJET-6"
   }

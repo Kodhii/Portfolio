@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio personnel",
+    "description": "Site web réalisé avec React, TypeScript et SCSS.",
+    "image": "./src/assets/pictures/Portfolio.png",
+    "details": "Ce projet met en avant mes compétences frontend : composants réactifs, animations SCSS et gestion des états via hooks.",
+    "location": "Github",
+    "URL": "https://github.com/Kodhii/Portfolio"
+  },
+  {
+    "id": 2,
+    "title": "Page web dynamique JS",
+    "description": "Page web dynamique réalisé avec Javascript dans le cadre de ma formation avec OpenClassRooms",
+    "image": "./src/assets/pictures/JS.png",
+    "details": "Utilisation de JavaScript pour communiquer avec une API et actualiser le contenu de la page de façon dynamique",
+    "location": "Github",
+    "URL": "https://github.com/Kodhii/PROJET-3"
+  },
+  {
+    "id": 3,
+    "title": "Backend Express & MongoDB",
+    "description": "Création d'une base de données pour un site de notation de livre réalisé avec Express et MongoDB dans le cadre de ma formation avec OpenClassRooms",
+    "image": "./src/assets/pictures/MongoDB.png",
+    "details": "Création d'une API REStful avec Express et MongoDB",
+    "location": "Github",
+    "URL": "https://github.com/Kodhii/PROJET-6"
+  }
+]

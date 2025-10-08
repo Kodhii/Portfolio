@@ -4,6 +4,8 @@ import Home from "./pages/Home"
 import CV from "./pages/CV";
 import Error from "./pages/404";
 import Parcours from "./pages/Parcours";
+import ProjectDetails from "./components/ProjectDetails";
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         <Route path="*" element={<Error />} />
         <Route path="cv" element={<CV />} />
         <Route path="parcours" element={<Parcours/>}/>
+        <Route path="/project/:id" element={<ProjectDetails />} />
       </Route>
     </Routes>
   );

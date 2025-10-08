@@ -2,6 +2,7 @@ import "./Home.scss";
 import Typing from "../components/effects/Typing";
 import AnimatedBackground from "../components/effects/AnimatedBackground";
 import Cards from "../components/Cards";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
 
@@ -19,18 +20,18 @@ export default function Home() {
           <div className="namePic">
             <div className="name">
               <h2>
-                <Typing text="Bonjour !" speed={40} />
+                <Typing text="Bonjour !" speed={30} />
               </h2>
               <h2>
-                <Typing text="Je suis Valentin Schwartz," speed={40} delay={700} />
+                <Typing text="Je suis Valentin Schwartz," speed={30} delay={600} />
               </h2>
               <h2>
-                <Typing text="Développeur Web Junior." speed={40} delay={1700} />
+                <Typing text="Développeur Web Junior." speed={30} delay={1500} />
               </h2>
             </div>
 
             <div className="picture">
-              <img src="./src/assets/pictures/Photo.png" alt="Ma photo de profil" />
+              <img src="/project/Photo.png" alt="Ma photo de profil" />
             </div>
           </div>
 
@@ -39,14 +40,14 @@ export default function Home() {
               <Typing
                 text="Je conçois des interfaces modernes et intuitives avec React, JavaScript et SCSS."
                 speed={15}
-                delay={3000}
+                delay={2800}
               />
             </p>
             <p>
               <Typing
                 text="J’ai également une expérience avec Node.js et MongoDB, qui me permet de travailler sur des projets complets, du frontend au backend."
                 speed={15}
-                delay={4200}
+                delay={4000}
               />
             </p>
           </div>
@@ -74,6 +75,7 @@ export default function Home() {
         <div className="travaux">
           <Cards />
         </div>
+        <ContactForm />
       </section>
     </main>
   );

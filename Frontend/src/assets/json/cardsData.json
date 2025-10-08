@@ -3,27 +3,72 @@
     "id": 1,
     "title": "Portfolio personnel",
     "description": "Site web réalisé avec React, TypeScript et SCSS.",
-    "image": "./src/assets/pictures/Portfolio.png",
+    "image": "/project/React.png",
     "details": "Ce projet met en avant mes compétences frontend : composants réactifs et animations SCSS",
     "location": "Github",
-    "URL": "https://github.com/Kodhii/Portfolio"
+    "URL": "https://github.com/Kodhii/Portfolio",
+    "URLpage": "/project/1",
+    "pointsTitle": "Fonctionnalités principales",
+    "points": [
+      "Développement complet d’une interface réactive en React + TypeScript",
+      "Animation fluide du texte et du fond via SCSS et hooks personnalisés",
+      "Structure modulaire et découpage logique des composants"
+    ],
+    "skillsTitle": "Compétences techniques acquises",
+    "skills": [
+      "React",
+      "TypeScript",
+      "SCSS",
+      "Gestion des états (Hooks)",
+      "Responsive design"
+    ]
   },
   {
     "id": 2,
     "title": "Page web dynamique JS",
     "description": "Page web dynamique réalisé avec Javascript dans le cadre de ma formation avec OpenClassRooms",
-    "image": "./src/assets/pictures/JS.png",
+    "image": "/project/JS.png",
     "details": "Intégration d’une API REST en JavaScript afin de mettre à jour le contenu de la page de manière dynamique et fluide.",
     "location": "Github",
-    "URL": "https://github.com/Kodhii/PROJET-3"
+    "URL": "https://github.com/Kodhii/PROJET-3",
+    "URLpage": "/project/2",
+    "pointsTitle": "Points clés du projet",
+    "points": [
+      "Appels API REST pour récupérer des données dynamiques",
+      "Manipulation du DOM et rendu asynchrone du contenu",
+      "Respect des bonnes pratiques d’accessibilité et de performance"
+    ],
+    "skillsTitle": "Compétences développées",
+    "skills": [
+      "JavaScript",
+      "API REST",
+      "JSON",
+      "Asynchrone (fetch, promises)",
+      "Optimisation front"
+    ]
   },
   {
     "id": 3,
     "title": "Backend Express & MongoDB",
     "description": "Création d'une base de données pour un site de notation de livre réalisé avec Express et MongoDB dans le cadre de ma formation avec OpenClassRooms",
-    "image": "./src/assets/pictures/MongoDB.png",
+    "image": "/project/MongoDB.png",
     "details": "Création d'une API REST avec Express et MongoDB",
     "location": "Github",
-    "URL": "https://github.com/Kodhii/PROJET-6"
+    "URL": "https://github.com/Kodhii/PROJET-6",
+    "URLpage": "/project/3",
+    "pointsTitle": "Objectifs du projet",
+    "points": [
+      "Mise en place d’un serveur Node.js avec Express",
+      "Création d’un modèle de données MongoDB",
+      "Implémentation d’un système d’authentification sécurisé"
+    ],
+    "skillsTitle": "Compétences techniques",
+    "skills": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Sécurité API",
+      "Postman"
+    ]
   }
 ]

@@ -10,6 +10,7 @@ interface CardData {
     details: string;
     location: string;
     URL: string;
+    URLpage: string;
 }
 
 export default function Cards() {
@@ -55,14 +56,15 @@ export default function Cards() {
 
                         <div className="modal-description">
                             <p>{selected.details}</p>
-                            <a
-                                href={selected.URL}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="link-button"
-                            >
-                                Voir sur {selected.location}
-                            </a>
+                            <div className="ButtonModal">
+                                <a
+                                    href={selected.URLpage}
+                                    rel="noopener noreferrer"
+                                    className="link-button"
+                                >
+                                    Voir détails
+                                </a>
+                            </div>
                         </div>
 
                     </div>

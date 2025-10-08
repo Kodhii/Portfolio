@@ -3,7 +3,6 @@
   background: linear-gradient(135deg, #080d1b 0%, #182b63 100%);
   color: #fff;
   text-align: center;
-  min-height: 100vh;
 
   h2 {
     font-size: 2rem;
@@ -81,6 +80,11 @@
       flex-direction: column;
       align-items: center;
       gap: 1rem;
+
+      .ButtonModal {
+        display: flex;
+        justify-content: space-evenly;
+      }
 
       h3 {
         color: #60a5fa;

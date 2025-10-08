@@ -1,0 +1,45 @@
+.errorPage {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+
+    h1 {
+        font-size: 8rem;
+        font-weight: 800;
+        color: #60a5fa;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        max-width: 500px;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+
+    .backHome {
+        background: #60a5fa;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: background 0.3s;
+
+        &:hover {
+            background: #3b82f6;
+        }
+    }
+}

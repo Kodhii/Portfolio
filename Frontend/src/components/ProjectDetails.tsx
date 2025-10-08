@@ -1,24 +1,24 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import data from "../assets/json/cardsData.json";
 import type { CardData } from "../assets/data/CardData";
 import "./ProjectDetails.scss";
 
 export default function ProjectDetails() {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const project: CardData | undefined = data.find(
     (p: CardData) => p.id === Number(id)
   );
 
-  if (!project) {
-    return (
-      <div className="projectNotFound">
-        <h2>Projet introuvable 😢</h2>
-        <Link to="/" className="backButton">
-          Retour à l’accueil
-        </Link>
-      </div>
-    );
-  }
+  useEffect(() => {
+    if (!project) {
+      navigate("/404", { replace: true });
+    }
+  }, [project, navigate]);
+
+
+  if (!project) return null;
 
   const imagePath = project.image;
 

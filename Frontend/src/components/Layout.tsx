@@ -37,13 +37,15 @@ export default function Layout() {
                 Mon parcours
               </NavLink>
 
-              <NavLink
-                to="/CV"
-                className={({ isActive }) => (isActive ? "active-link" : "")}
-                onClick={() => setMenuOpen(false)}
-              >
-                Mon CV
-              </NavLink>
+              <li>
+                <a
+                  href="/CV_Schwartz_Valentin.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Mon CV
+                </a>
+              </li>
             </div>
           </div>
         </nav>

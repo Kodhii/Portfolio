@@ -39,9 +39,10 @@ export default function Layout() {
 
               <li>
                 <a
-                  href="/CV_Schwartz_Valentin.pdf"
+                  href="https://kodhii.github.io/Portfolio/files/CV_Schwartz_Valentin.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="nav-link"
                 >
                   Mon CV
                 </a>

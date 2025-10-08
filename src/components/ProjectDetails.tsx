@@ -1,5 +1,4 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 import data from "../assets/json/cardsData.json";
 import type { CardData } from "../assets/data/CardData";
 import "./ProjectDetails.scss";
@@ -11,16 +10,12 @@ export default function ProjectDetails() {
     (p: CardData) => p.id === Number(id)
   );
 
-  useEffect(() => {
-    if (!project) {
-      navigate("/404", { replace: true });
-    }
-  }, [project, navigate]);
+  if (!project) {
+    navigate("/404", { replace: true });
+    return null;
+  }
 
-
-  if (!project) return null;
-
-  const imagePath = project.image;
+  const imagePath = `${import.meta.env.BASE_URL}${project.image.replace("./", "")}`;
 
   return (
     <section className="projectDetails lightTheme">
@@ -32,7 +27,6 @@ export default function ProjectDetails() {
       </div>
 
       <div className="projectContainer">
-
         {Array.isArray(project.points) && project.points.length > 0 && (
           <div className="pointsSection">
             <h3>{project.pointsTitle}</h3>
@@ -73,4 +67,3 @@ export default function ProjectDetails() {
     </section>
   );
 }
-

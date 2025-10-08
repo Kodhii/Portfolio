@@ -27,7 +27,7 @@ export default function Parcours() {
 
             <div className="LBI fade-in-section">
                 <span className="img">
-                    <img src="/project/LBI.webp" alt="Photo de l'entreprise LBI" />
+                    <img src="./project/LBI.webp" alt="Photo de l'entreprise LBI" />
                 </span>
 
                 <div className="text">
@@ -49,7 +49,7 @@ export default function Parcours() {
 
             <div className="OpenClassrooms fade-in-section">
                 <span className="img">
-                    <img src="/project/OpenClassrooms.png" alt="Logo OpenClassrooms" />
+                    <img src="./project/OpenClassrooms.png" alt="Logo OpenClassrooms" />
                 </span>
 
                 <div className="text">

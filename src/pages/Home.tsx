@@ -31,7 +31,7 @@ export default function Home() {
             </div>
 
             <div className="picture">
-              <img src="/project/Photo.png" alt="Ma photo de profil" />
+              <img src="./project/Photo.png" alt="Ma photo de profil" />
             </div>
           </div>
 
@@ -80,4 +80,3 @@ export default function Home() {
     </main>
   );
 }
-

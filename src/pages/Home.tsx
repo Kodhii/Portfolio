@@ -3,8 +3,19 @@ import Typing from "../components/effects/Typing";
 import AnimatedBackground from "../components/effects/AnimatedBackground";
 import Cards from "../components/Cards";
 import ContactForm from "../components/ContactForm";
+import { useEffect, useState } from "react";
+import skillsData from "../assets/json/skillsData.json";
 
 export default function Home() {
+  const [showSkills, setShowSkills] = useState(false);
+
+  useEffect(() => {
+    const totalTypingDuration = 1500;
+    const timer = setTimeout(() => {
+      setShowSkills(true);
+    }, totalTypingDuration);
+    return () => clearTimeout(timer);
+  }, []);
 
   const scrollToNextSection = () => {
     const next = document.querySelector("#nextSection");
@@ -35,25 +46,34 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="description">
-            <p>
-              <Typing
-                text="Je conçois des interfaces modernes et intuitives avec React, JavaScript et SCSS."
-                speed={15}
-                delay={2800}
-              />
-            </p>
-            <p>
-              <Typing
-                text="J’ai également une expérience avec Node.js et MongoDB, qui me permet de travailler sur des projets complets, du frontend au backend."
-                speed={15}
-                delay={4000}
-              />
-            </p>
-          </div>
+          {showSkills && (
+            <div className="skillsShowcase fadeInBlock">
+              <div className="skillsBlock">
+                <h3>Compétences Frontend</h3>
+                <div className="skillsTags">
+                  {skillsData.frontend.map((skill) => (
+                    <span key={skill} className="tag">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="skillsBlock">
+                <h3>Compétences Backend</h3>
+                <div className="skillsTags">
+                  {skillsData.backend.map((skill) => (
+                    <span key={skill} className="tag">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
-        <div className="scrollIndicator" onClick={() => scrollToNextSection()}>
+        <div className="scrollIndicator" onClick={scrollToNextSection}>
           <svg
             width="30"
             height="30"

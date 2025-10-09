@@ -55,8 +55,8 @@ export default function Parcours() {
                 <div className="text">
                     <p>
                         Après huit années dans l’usinage, j’ai choisi de me réorienter vers le{" "}
-                        <strong>développement web</strong>, un domaine qui m’a toujours passionné. J’ai suivi
-                        une formation intensive de six mois chez <strong>OpenClassrooms</strong>, axée sur
+                        <strong>développement web</strong>, un domaine qui m’a toujours attiré. J’ai suivi
+                        une formation de six mois chez <strong>OpenClassrooms</strong>, axée sur
                         JavaScript, React et Node.js.
                     </p>
                     <p>

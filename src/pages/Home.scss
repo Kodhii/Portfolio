@@ -63,18 +63,46 @@
             }
         }
 
-        .description {
-            font-size: 1.2rem;
-            font-weight: 500;
-            line-height: 1.6;
-            text-align: left;
-            max-width: 1300px;
-            margin-top: 4rem;
+        .skillsShowcase {
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSkills 1s ease forwards 1.2s;
 
-            p {
-                margin: 0;
-                padding: 0;
-                width: 100%;
+            .skillsBlock {
+                text-align: left;
+
+                h3 {
+                    color: #60a5fa;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    margin-bottom: 0.8rem;
+                }
+
+                .skillsTags {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.6rem;
+
+                    .tag {
+                        padding: 0.5rem 1.2rem;
+                        background: rgba(96, 165, 250, 0.15);
+                        border: 1px solid #60a5fa;
+                        border-radius: 25px;
+                        color: #60a5fa;
+                        font-weight: 600;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background: #60a5fa;
+                            color: #ffffff;
+                            transform: scale(1.05);
+                        }
+                    }
+                }
             }
         }
     }
@@ -128,6 +156,13 @@
     }
 }
 
+@keyframes fadeInSkills {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 1024px) {
     .mainSection .contentWrapper .namePic .picture img {
         width: 12rem;
@@ -139,12 +174,13 @@
 
 @media (max-width: 768px) {
     .mainSection {
-        height: calc(100vh - 75px);
+        min-height: calc(100vh - 75px);
+        height: auto;
         justify-content: flex-start;
         align-items: center;
 
         .contentWrapper {
-            padding: 1rem 1rem 1rem 1rem;
+            padding: 1rem;
             width: unset;
 
             .namePic {
@@ -158,7 +194,7 @@
                     font-size: 15px;
 
                     h2 {
-                        font-size: 26px;
+                        font-size: 25px;
                         margin: 0;
                         padding: 0;
                     }
@@ -176,17 +212,22 @@
                 }
             }
 
-            .description {
-                margin-top: 2rem;
-                font-size: 1rem;
-                line-height: 1.4;
-                max-width: 90%;
+            .skillsShowcase {
                 text-align: center;
+                margin: 1rem 0;
 
-                p {
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
+                .skillsBlock {
+                    h3 {
+                        font-size: 1.2rem;
+                    }
+
+                    .skillsTags {
+
+                        .tag {
+                            font-size: 0.9rem;
+                            padding: 0.4rem 1rem;
+                        }
+                    }
                 }
             }
         }
@@ -368,7 +409,6 @@
                     }
                 }
             }
-
         }
     }
 }

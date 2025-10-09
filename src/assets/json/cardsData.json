@@ -8,13 +8,29 @@
     "location": "Github",
     "URL": "https://github.com/Kodhii/Portfolio",
     "URLpage": "#/project/1",
-    "pointsTitle": "Fonctionnalités principales",
+
+    "contextTitle": "Objectif / Contexte",
+    "context": "Ce projet avait pour objectif de créer un portfolio professionnel moderne afin de présenter mes réalisations et compétences en développement web.",
+
+    "resultTitle": "Résultat attendu",
+    "result": "Proposer un site moderne, fluide et responsive offrant une navigation claire, des animations soignées et un design professionnel.",
+
+    "pointsTitle": "Points clés du projet",
     "points": [
       "Développement complet d’une interface réactive en React + TypeScript",
       "Animation fluide du texte et du fond via SCSS et hooks personnalisés",
       "Structure modulaire et découpage logique des composants"
     ],
-    "skillsTitle": "Compétences techniques acquises",
+
+    "toolsTitle": "Outils utilisés",
+    "tools": [
+      "Visual Studio Code",
+      "Git & GitHub",
+      "Vite",
+      "EmailJS"
+    ],
+
+    "skillsTitle": "Compétences développées",
     "skills": [
       "React",
       "TypeScript",
@@ -32,12 +48,28 @@
     "location": "Github",
     "URL": "https://github.com/Kodhii/PROJET-3",
     "URLpage": "#/project/2",
+
+    "contextTitle": "Objectif / Contexte",
+    "context": "Ce projet avait pour objectif de développer la partie Frontend en communication avec une API REST d'un site d'architecte",
+
+    "resultTitle": "Résultat attendu",
+    "result": "Une partie frontend fonctionnelle, affichant le contenu dynamiquement et permettant à l'utilisateur connecté de modifier ses travaux",
+
     "pointsTitle": "Points clés du projet",
     "points": [
       "Appels API REST pour récupérer des données dynamiques",
       "Manipulation du DOM et rendu asynchrone du contenu",
       "Respect des bonnes pratiques d’accessibilité et de performance"
     ],
+
+    "toolsTitle": "Outils utilisés",
+    "tools": [
+      "Visual Studio Code",
+      "Git & GitHub",
+      "Swagger",
+      "Figma"
+    ],
+
     "skillsTitle": "Compétences développées",
     "skills": [
       "JavaScript",
@@ -56,13 +88,30 @@
     "location": "Github",
     "URL": "https://github.com/Kodhii/PROJET-6",
     "URLpage": "#/project/3",
-    "pointsTitle": "Objectifs du projet",
+
+    "contextTitle": "Objectif / Contexte",
+    "context": "Ce projet avait pour objectif de fournir une API REST adapter à une partie frontend réalisé par un autre développeur",
+
+    "resultTitle": "Résultat attendu",
+    "result": "Fournir une API REST Express/MongoDB répondant aux besoins du frontend et des bonnes pratiques de sécurité",
+
+    "pointsTitle": "Points clés du projet",
     "points": [
       "Mise en place d’un serveur Node.js avec Express",
       "Création d’un modèle de données MongoDB",
       "Implémentation d’un système d’authentification sécurisé"
     ],
-    "skillsTitle": "Compétences techniques",
+
+    "toolsTitle": "Outils utilisés",
+    "tools": [
+      "Visual Studio Code",
+      "Git & GitHub",
+      "Express",
+      "MongoDB",
+      "JWT/bcrypt"
+    ],
+
+    "skillsTitle": "Compétences développées",
     "skills": [
       "Node.js",
       "Express",

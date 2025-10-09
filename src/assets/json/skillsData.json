@@ -1,0 +1,4 @@
+{
+  "frontend": ["HTML", "CSS / SCSS", "JavaScript", "React", "TypeScript"],
+  "backend": ["Node.js", "Express", "MongoDB"]
+}

@@ -27,7 +27,7 @@
         .overlay {
             position: absolute;
             inset: 0;
-            background: rgba(15, 23, 42, 0.20);
+            background: rgba(15, 23, 42, 0.2);
             z-index: 1;
             display: flex;
             justify-content: center;
@@ -49,14 +49,10 @@
         padding: 2rem 2rem 3rem 2rem;
         text-align: center;
 
-        .description {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #1e293b;
-            margin-bottom: 2rem;
-        }
-
+        .contextSection,
+        .resultSection,
         .pointsSection,
+        .toolsSection,
         .skillsSection {
             margin-bottom: 2rem;
             text-align: left;
@@ -64,6 +60,14 @@
             h3 {
                 color: #1e3a8a;
                 margin-bottom: 1rem;
+            }
+
+            p {
+                background: #e5e7eb;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                line-height: 1.6;
+                color: #0f172a;
             }
 
             ul {
@@ -81,6 +85,7 @@
             }
         }
 
+        .toolsSection ul li,
         .skillsSection ul li {
             display: inline-block;
             background: #e5e7eb;
@@ -130,8 +135,11 @@
         .projectContainer {
             padding: 1.5rem 0;
 
-            .skillsSection,
-            .pointsSection {
+            .contextSection,
+            .resultSection,
+            .pointsSection,
+            .toolsSection,
+            .skillsSection {
                 h3 {
                     padding: 0 1rem;
                 }

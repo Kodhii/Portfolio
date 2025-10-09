@@ -55,14 +55,6 @@ export default function Cards() {
                         <div className="modal-description">
                             <p>{selected.details}</p>
                             <div className="ButtonModal">
-                                <a
-                                    href={selected.URL}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="link-button"
-                                >
-                                    Voir sur {selected.location}
-                                </a>
                                 <a href={selected.URLpage} rel="noopener noreferrer" className="link-button">
                                     Voir détails
                                 </a>

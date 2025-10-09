@@ -17,7 +17,6 @@
   <meta name="geo.position" content="49.1193;6.1757" />
   <meta name="ICBM" content="49.1193, 6.1757" />
   <meta name="author" content="Valentin Schwartz" />
-  <link rel="icon" type="image/png" href="/project/Photo.png" />
   <meta property="og:title" content="Portfolio | Valentin Schwartz" />
   <meta property="og:description"
     content="Développeur web junior passionné par React et les interfaces modernes. Découvrez mes projets et mon parcours." />
@@ -35,27 +34,53 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Valentin Schwartz",
-  "jobTitle": "Développeur Web Junior",
-  "url": "https://kodhii.github.io/Portfolio/",
-  "image": "https://kodhii.github.io/Portfolio/project/Photo.png",
-  "address": [
+  "@graph": [
     {
-      "@type": "PostalAddress",
-      "addressLocality": "Metz",
-      "postalCode": "57000",
-      "addressCountry": "FR"
+      "@type": "WebSite",
+      "@id": "https://kodhii.github.io/Portfolio/#website",
+      "url": "https://kodhii.github.io/Portfolio/",
+      "name": "Portfolio - Valentin Schwartz",
+      "description": "Portfolio professionnel de Valentin Schwartz, développeur web junior spécialisé en React, TypeScript et SCSS.",
+      "publisher": {
+        "@id": "https://kodhii.github.io/Portfolio/#person"
+      },
+      "inLanguage": "fr"
     },
     {
-      "@type": "PostalAddress",
-      "addressLocality": "Hagondange",
-      "postalCode": "57300",
-      "addressCountry": "FR"
+      "@type": "WebPage",
+      "@id": "https://kodhii.github.io/Portfolio/#webpage",
+      "url": "https://kodhii.github.io/Portfolio/",
+      "name": "Accueil - Portfolio de Valentin Schwartz",
+      "description": "Découvrez les projets et le parcours de Valentin Schwartz, développeur web junior en React et TypeScript.",
+      "isPartOf": {
+        "@id": "https://kodhii.github.io/Portfolio/#website"
+      },
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://kodhii.github.io/Portfolio/#person",
+      "name": "Valentin Schwartz",
+      "jobTitle": "Développeur Web Junior",
+      "url": "https://kodhii.github.io/Portfolio/",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Metz",
+          "postalCode": "57000",
+          "addressCountry": "FR"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Hagondange",
+          "postalCode": "57300",
+          "addressCountry": "FR"
+        }
+      ],
+      "sameAs": [
+        "https://github.com/Kodhii"
+      ]
     }
-  ],
-  "sameAs": [
-    "https://github.com/Kodhii"
   ]
 }
 </script>

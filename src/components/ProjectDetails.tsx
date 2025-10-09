@@ -6,8 +6,9 @@ import "./ProjectDetails.scss";
 export default function ProjectDetails() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+
   const project: CardData | undefined = data.find(
-    (p: CardData) => p.id === Number(id)
+    (p) => p.id === Number(id)
   );
 
   if (!project) {
@@ -15,24 +16,51 @@ export default function ProjectDetails() {
     return null;
   }
 
-  const imagePath = `${import.meta.env.BASE_URL}${project.image.replace("./", "")}`;
+  const imagePath = project.image
+    ? `${import.meta.env.BASE_URL}${project.image.replace("./", "")}`
+    : "";
 
   return (
     <section className="projectDetails lightTheme">
       <div className="projectHeader">
-        <img src={imagePath} alt={project.title} />
+        {imagePath && <img src={imagePath} alt={project.title} />}
         <div className="overlay">
           <h1>{project.title}</h1>
         </div>
       </div>
 
       <div className="projectContainer">
+        {project.context && (
+          <div className="contextSection">
+            <h3>{project.contextTitle}</h3>
+            <p>{project.context}</p>
+          </div>
+        )}
+
+        {project.result && (
+          <div className="resultSection">
+            <h3>{project.resultTitle}</h3>
+            <p>{project.result}</p>
+          </div>
+        )}
+
         {Array.isArray(project.points) && project.points.length > 0 && (
           <div className="pointsSection">
             <h3>{project.pointsTitle}</h3>
             <ul>
               {project.points.map((point: string, index: number) => (
                 <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {Array.isArray(project.tools) && project.tools.length > 0 && (
+          <div className="toolsSection">
+            <h3>{project.toolsTitle}</h3>
+            <ul>
+              {project.tools.map((tool: string, index: number) => (
+                <li key={index}>{tool}</li>
               ))}
             </ul>
           </div>
@@ -50,14 +78,16 @@ export default function ProjectDetails() {
         )}
 
         <div className="links">
-          <a
-            href={project.URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="linkButton"
-          >
-            Voir sur {project.location}
-          </a>
+          {project.URL && (
+            <a
+              href={project.URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkButton"
+            >
+              Voir sur {project.location}
+            </a>
+          )}
 
           <Link to="/" className="linkButton secondary">
             Retour

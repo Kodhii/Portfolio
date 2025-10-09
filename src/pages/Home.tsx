@@ -3,7 +3,7 @@ import Typing from "../components/effects/Typing";
 import AnimatedBackground from "../components/effects/AnimatedBackground";
 import Cards from "../components/Cards";
 import ContactForm from "../components/ContactForm";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import skillsData from "../assets/json/skillsData.json";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main>
       <section className="mainSection">
-        <AnimatedBackground />
+        {useMemo(() => <AnimatedBackground />, [])}
 
         <div className="contentWrapper">
           <div className="namePic">

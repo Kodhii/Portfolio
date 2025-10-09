@@ -48,8 +48,8 @@
         }
 
         button {
-            background: #60a5fa;
-            color: #fff;
+            background: #60a4fd;
+            color: #ffffff;
             border: none;
             border-radius: 0.5rem;
             padding: 1rem 2rem;
@@ -72,4 +72,15 @@
             margin-top: 1rem;
         }
     }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

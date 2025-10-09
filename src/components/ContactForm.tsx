@@ -68,7 +68,9 @@ export default function ContactForm() {
             <h3>Me contacter</h3>
             <form onSubmit={handleSubmit} className="contactForm">
                 <div className="formRow">
+                    <label htmlFor="firstName" className="sr-only">Prénom *</label>
                     <input
+                        id="firstName"
                         type="text"
                         name="firstName"
                         placeholder="Prénom *"
@@ -76,7 +78,10 @@ export default function ContactForm() {
                         onChange={handleChange}
                         required
                     />
+
+                    <label htmlFor="lastName" className="sr-only">Nom *</label>
                     <input
+                        id="lastName"
                         type="text"
                         name="lastName"
                         placeholder="Nom *"
@@ -87,14 +92,19 @@ export default function ContactForm() {
                 </div>
 
                 <div className="formRow">
+                    <label htmlFor="company" className="sr-only">Société (facultatif)</label>
                     <input
+                        id="company"
                         type="text"
                         name="company"
                         placeholder="Société (facultatif)"
                         value={formData.company}
                         onChange={handleChange}
                     />
+
+                    <label htmlFor="email" className="sr-only">Email *</label>
                     <input
+                        id="email"
                         type="email"
                         name="email"
                         placeholder="Email *"
@@ -104,7 +114,9 @@ export default function ContactForm() {
                     />
                 </div>
 
+                <label htmlFor="subject" className="sr-only">Objet *</label>
                 <input
+                    id="subject"
                     type="text"
                     name="subject"
                     placeholder="Objet *"
@@ -113,7 +125,9 @@ export default function ContactForm() {
                     required
                 />
 
+                <label htmlFor="message" className="sr-only">Votre message *</label>
                 <textarea
+                    id="message"
                     name="message"
                     placeholder="Votre message *"
                     rows={6}
@@ -127,10 +141,10 @@ export default function ContactForm() {
                 </button>
 
                 {status === "success" && (
-                    <p className="successMsg">Message envoyé avec succès !</p>
+                    <p className="success-msg">Message envoyé avec succès !</p>
                 )}
                 {status === "error" && (
-                    <p className="errorMsg">Une erreur est survenue. Réessayez plus tard.</p>
+                    <p className="error-msg">Une erreur est survenue. Réessayez plus tard.</p>
                 )}
             </form>
         </section>

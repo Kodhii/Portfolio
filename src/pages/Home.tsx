@@ -5,15 +5,34 @@ import Cards from "../components/Cards";
 import ContactForm from "../components/ContactForm";
 import { useEffect, useState, useMemo } from "react";
 import skillsData from "../assets/json/skillsData.json";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 
 export default function Home() {
   const [showSkills, setShowSkills] = useState(false);
+  const [showPicture, setShowPicture] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const totalTypingDuration = 1500;
-    const timer = setTimeout(() => {
-      setShowSkills(true);
-    }, totalTypingDuration);
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      setShowPicture(false);
+      const totalTypingDuration =1200;
+      const timer = setTimeout(() => setShowPicture(true), totalTypingDuration);
+      return () => clearTimeout(timer);
+    }
+  }, [isMobile]);
+
+  useEffect(() => {
+    const totalTypingDuration =1800;
+    const timer = setTimeout(() => setShowSkills(true), totalTypingDuration);
     return () => clearTimeout(timer);
   }, []);
 
@@ -41,9 +60,15 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="picture">
-              <img src="./project/Photo.png" alt="Ma photo de profil" />
-            </div>
+            {showPicture && (
+              <div className="picture fadeInPicture">
+                <img src="./project/Photo.png" alt="Ma photo de profil" />
+                <div className="socials">
+                  <a target="blank" href="https://github.com/Kodhii"><FaGithub size={40} color="#60a5fa"/></a>
+                  <a target="blank" href="https://www.linkedin.com/in/valentin-schwartz57/"><FaLinkedin size={40} color="#60a5fa"/></a>
+                </div>
+              </div>
+            )}
           </div>
 
           {showSkills && (

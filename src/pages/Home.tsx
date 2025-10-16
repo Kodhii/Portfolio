@@ -64,8 +64,8 @@ export default function Home() {
               <div className="picture fadeInPicture">
                 <img src="./project/Photo.png" alt="Ma photo de profil" />
                 <div className="socials">
-                  <a target="blank" rel="noopener noreferrer" href="https://github.com/Kodhii"><FaGithub size={40} color="#60a5fa"/></a>
-                  <a target="blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/valentin-schwartz57/"><FaLinkedin size={40} color="#60a5fa"/></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Kodhii"><FaGithub size={40} color="#60a5fa"/></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/valentin-schwartz57/"><FaLinkedin size={40} color="#60a5fa"/></a>
                 </div>
               </div>
             )}

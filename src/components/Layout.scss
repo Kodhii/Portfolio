@@ -49,6 +49,10 @@ body {
             display: flex;
             gap: 1rem;
 
+            li{
+              list-style: none;
+            }
+
             a {
               color: #ffffff;
               text-decoration: none;
@@ -84,13 +88,13 @@ body {
               align-items: flex-start;
               max-height: 0;
               overflow: hidden;
-              transition: max-height 0.1s ease-out;
+              transition: max-height 0s ease-out;
               z-index: 30;
-              padding: 0;
 
               &.show {
                 max-height: 500px;
                 padding: 0.5rem 1rem;
+                margin-top: 1rem;
               }
 
               a {

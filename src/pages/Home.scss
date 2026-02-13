@@ -60,8 +60,9 @@
                     object-fit: cover;
                     display: block;
                 }
+
                 .socials {
-                    display:  flex;
+                    display: flex;
                     justify-content: center;
                     margin-top: 2rem;
                     gap: 1rem;
@@ -285,17 +286,24 @@
 
             .cardsGrid {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
                 gap: 2rem;
+
+                grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
                 justify-content: center;
-                align-items: stretch;
+
+                max-width: calc(350px * 3 + 2rem * 2);
+                margin: 0 auto;
+
+                .card:last-child:nth-child(3n + 1) {
+                    grid-column: 2;
+                }
 
                 @media (max-width: 1024px) {
-                    grid-template-columns: repeat(2, 1fr);
+                    max-width: calc(350px * 2 + 2rem);
                 }
 
                 @media (max-width: 640px) {
-                    grid-template-columns: 1fr;
+                    max-width: 350px;
                 }
             }
 

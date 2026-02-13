@@ -119,5 +119,48 @@
       "Sécurité API",
       "Postman"
     ]
+  },
+    {
+    "id": 4,
+    "title": "Plateforme d'analyse et gestion de programmes CNC",
+    "description": "Création d'un outil d'apprentissage et de création en ISO",
+    "image": "./project/WIP.png",
+    "details": "Développement d’une application web destinée aux professionnels et étudiants en usinage pour centraliser la documentation ISO, créer et gérer des programmes CNC, et intégrer un système intelligent de détection d’erreurs.",
+    "location": "(à venir)",
+    "URL": "",
+    "URLpage": "#/project/4",
+
+    "contextTitle": "Contexte",
+    "context": "Ce projet consiste à la création d'une application web destinée à facillité la programmation industriel",
+
+    "resultTitle": "Objectif",
+    "result": "Fournir un outil facillitant l'apprentissage et la création de programmes industriel",
+
+    "pointsTitle": "Points clés du projet",
+    "points": [
+      "Base de données complète des codes ISO (G-code / M-code)",
+      "Éditeur de programmes CNC avec sauvegarde et export",
+      "Calculateur de données de coupe (Vc, n, fz, Vf)",
+      "Système d’analyse statique pour la détection d’erreurs et incohérences"
+    ],
+
+    "toolsTitle": "Stack technique prévisionnelle",
+    "tools": [
+      "React",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "Monaco Editor",
+      "Git & GitHub"
+    ],
+
+    "skillsTitle": "Compétences nécessaires",
+    "skills": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Sécurité API",
+      "Postman"
+    ]
   }
 ]

@@ -299,6 +299,8 @@
                 }
 
                 @media (max-width: 1024px) {
+                    display: flex;
+                    flex-direction: column;
                     max-width: calc(350px * 2 + 2rem);
                 }
 

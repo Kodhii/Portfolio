@@ -85,7 +85,7 @@ export default function ProjectDetails() {
               rel="noopener noreferrer"
               className="linkButton"
             >
-              Voir sur {project.location}
+            {project.location}
             </a>
           )}
 

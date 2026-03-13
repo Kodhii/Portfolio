@@ -126,8 +126,8 @@
     "description": "Création d'un outil d'apprentissage et de création en ISO",
     "image": "./project/WIP.png",
     "details": "Développement d’une application web destinée aux professionnels et étudiants en usinage pour centraliser la documentation ISO, créer et gérer des programmes CNC, et intégrer un système intelligent de détection d’erreurs.",
-    "location": "(à venir)",
-    "URL": "",
+    "location": "Présentation",
+    "URL": "/Portfolio/public/files/Details-projet.pdf",
     "URLpage": "#/project/4",
 
     "contextTitle": "Contexte",
